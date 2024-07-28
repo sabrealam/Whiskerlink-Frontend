@@ -135,7 +135,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         setMessages([...messages, newMessageRecieved]);
       }
     });
-  });
+  } );
 
   const typingHandler = (e) => {
     setNewMessage(e.target.value);
@@ -206,6 +206,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             h="100%"
             borderRadius="lg"
             overflowY="hidden"
+            
           >
             {loading ? (
               <Spinner
@@ -226,6 +227,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               id="first-name"
               isRequired
               mt={3}
+              
             >
               {istyping ? (
                 <div>
@@ -245,6 +247,10 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                 placeholder="Enter a message.."
                 value={newMessage}
                 onChange={typingHandler}
+                // position={"absolute"}
+                // top="600px"
+                  
+
               />
             </FormControl>
           </Box>
