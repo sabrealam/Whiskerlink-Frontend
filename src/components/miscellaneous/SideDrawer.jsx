@@ -144,7 +144,7 @@ function SideDrawer() {
         <div>
 
         <Text fontSize="2xl" fontFamily="Work sans">
-          WhiskerLink
+          Green Chat
         </Text>
         </div>
         <div>
